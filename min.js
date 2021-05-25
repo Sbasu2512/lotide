@@ -1,5 +1,5 @@
-const min = function (numbers) {
-  // Write code here that returns the smallest value in numbers
+const min = function(numbers) {
+  
   let smallNum = numbers[0];
   //  let temp = 0;
 
@@ -13,7 +13,7 @@ const min = function (numbers) {
 /*
  * This is some test runner code that's simply calling our min function defined
  * above to verify it's returning the proper minimum. Do not modify it!
- */
+ 
 
 const flightPrices = [1260, 490, 599, 1400, 820];
 console.log(
@@ -42,3 +42,4 @@ console.log(
     temperatures
   )}C`
 );
+*/
