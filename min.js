@@ -1,8 +1,5 @@
 const min = function(numbers) {
-  
   let smallNum = numbers[0];
-  //  let temp = 0;
-
   for (let i = 1; i < numbers.length; i++) {
     if (smallNum > numbers[i]) {
       smallNum = numbers[i];
