@@ -7,3 +7,6 @@ The map function will return a new array based on the results of the callback fu
 */
 const words = ["ground", "control", "to", "major", "tom"];
 //Call map and pass in our words and a simple arrow function.
+const map = (array,fn) => {
+
+} ;
