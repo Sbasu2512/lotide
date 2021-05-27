@@ -16,7 +16,7 @@ const map = (array,callback) => {
 const results = [];
 //We now need to populate our results array & Complete the for loop by pushing each item into our results array. And that should complete the logic for our map function!
 for (let item of array) {
-  //console.log('item BEFORE: ', item);
+  console.log('item BEFORE: ', item);
   console.log('item AFTER: ', callback(item));
   console.log('---');
   results.push(callback(item));
