@@ -40,9 +40,10 @@ return result;
 }
 
 console.log(without([1,2,5,3,4],[4,5,1]));
-
+/*
 var without = baseRest(function(array, values) {
   return isArrayLikeObject(array)
     ? baseDifference(array, values)
     : [];
 });
+*/
