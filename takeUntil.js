@@ -16,7 +16,7 @@ const takeUntil = function(arr, callback) {
     } else if(callback(e) === true) {
       //result.splice()
       console.log("if not false")
-      Process.exit()
+      process.exit()
     }
   })
   return result;
