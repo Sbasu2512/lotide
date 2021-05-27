@@ -9,14 +9,16 @@ Implement takeUntil which will keep collecting items from a provided array until
 
 const takeUntil = function(arr, callback) {
   var result = [] ;
-  for( let i=0; i<arr.length; i++){
-    //console.log(arr[i]);
-    if(callback(arr[i]) === true){
-      result.splice(i);
-    }else {
-      result.push(callback(arr[i]));
+  arr.filter((e) => {
+    if(callback(e) === false) {
+      console.log("falsy value")
+      result.push(e);
+    } else if(callback(e) === true) {
+      //result.splice()
+      console.log("if not false")
+      Process.exit()
     }
-  }
+  })
   return result;
   }
   
