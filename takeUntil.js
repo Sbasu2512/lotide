@@ -13,7 +13,7 @@ const takeUntil = function(arr, callback) {
     console.log('item BEFORE: ', item);
   console.log('item AFTER: ', callback(item));
   console.log('---');
-  if(!callback(item)){
+  if(callback(item) === false){
     result.push(item);
   } else {
     result.splice(arr[item]);
