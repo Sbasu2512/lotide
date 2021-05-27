@@ -9,11 +9,9 @@ Implement takeUntil which will keep collecting items from a provided array until
 
 const takeUntil = function(arr, callback) {
   var result = [] ;
-  for (let item of arr) {
-    console.log(arr[item]);
-   // console.log('item BEFORE: ', item);
- // console.log('item AFTER: ', callback(item));
- // console.log('---');
+  for( let i=0; i<arr.length; i++){
+    console.log(arr[i]);
+  }
   
   }
   return result;
