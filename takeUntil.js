@@ -15,7 +15,7 @@ const takeUntil = function(arr, callback) {
   console.log('---');
   if(!callback(item)){
     result.push(item);
-  } else if (callback(item)) {
+  } else (callback(item)) {
     process.exit();
   }
   return result;
