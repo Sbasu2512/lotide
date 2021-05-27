@@ -11,8 +11,13 @@ const takeUntil = function(arr, callback) {
   var result = [] ;
   for( let i=0; i<arr.length; i++){
     console.log(arr[i]);
+    if(callback(arr[i])){
+      result.splice(i);
+    }else {
+      result.push(callback(arr[i]));
+    }
   }
-  //return result;
+  return result;
   }
   
 
