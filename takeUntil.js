@@ -8,7 +8,7 @@ Implement takeUntil which will keep collecting items from a provided array until
 */
 
 const takeUntil = function(array, callback) {
-  for(let var of array) {
+  for(let var of arr) {
     console.log('item BEFORE: ', item);
   console.log('item AFTER: ', callback(item));
   console.log('---');
