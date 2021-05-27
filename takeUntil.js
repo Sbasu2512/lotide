@@ -7,8 +7,8 @@ To keep things simple, the callback should only be provided one value: The item 
 Implement takeUntil which will keep collecting items from a provided array until the callback provided returns a truthy value.
 */
 
-const takeUntil = function(array, callback) {
-  for(let var of arr) {
+const takeUntil = function(arr, callback) {
+  for (let item of arr) {
     console.log('item BEFORE: ', item);
   console.log('item AFTER: ', callback(item));
   console.log('---');
