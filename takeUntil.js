@@ -12,10 +12,10 @@ const takeUntil = function(arr, callback) {
   for( let i=0; i<arr.length; i++){
     console.log(arr[i]);
   }
-  
+  //return result;
   }
-  return result;
-}
+  
+
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const results1 = takeUntil(data1, x => x < 0);
