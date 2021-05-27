@@ -6,7 +6,7 @@ A callback function
 The map function will return a new array based on the results of the callback function.
 */
 //Documentation of how!
-/**/
+/*
 const words = ["ground", "control", "to", "major", "tom"];
 //Call map and pass in our words and a simple arrow function.
 const map = (array,callback) => {
@@ -23,6 +23,6 @@ for (let item of array) {
 }
   return results;
 } ;
-
-//const results1 = map(words, word => word[0]);
-//console.log(results1);
+const results1 = map(words, word => word[0]);
+console.log(results1);
+*/
