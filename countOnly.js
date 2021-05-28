@@ -14,16 +14,10 @@ const assertEqual = function(actual, expected) {
 //Our function countOnly needs to return a proper report on all the strings found in the input array, and their respective counts. 
 //Therefore it will need to return an object that can represent the stats.
 const countOnly = function(allItems, itemsToCount) {
-  for(let item in itemsToCount) {
-    let counter = 0;
-    for(let index in allItems){
-    if(item === index) {
-      counter++;
-    }
-  }
-  return `${item}: ${counter} `
-  }
-    ;
+  let counter = 0;
+  let item , index ;
+  
+    
 }
 
 const firstNames = [
