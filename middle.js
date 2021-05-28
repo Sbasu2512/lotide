@@ -29,13 +29,13 @@ if (arr.length <3){
   console.log(temp);
 }else if (arr.length % 2 === 0){
 //For arrays with an even number of elements, an array containing the two elements in the middle should be returned
-index = Math.floor((arr.length-1)/2)
-temp = arr.splice(index,index+1) ;
+index = arr.length/2;
+temp = arr.splice(index-1,2) ;
 console.log(temp);
 } else {
 //For arrays with odd number of elements, an array containing a single middle element should be returned.
 index = Math.floor((arr.length-1)/2)
-temp = arr.splice(index) ;
+temp.push(arr[index]) ;
 console.log(temp);
 }
 };
