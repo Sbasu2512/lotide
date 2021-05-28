@@ -35,7 +35,7 @@ console.log(temp);
 } else {
 //For arrays with odd number of elements, an array containing a single middle element should be returned.
 index = Math.floor((arr.length-1)/2)
-temp = arr[index] ;
+temp = arr.splice(index) ;
 console.log(temp);
 }
 };
