@@ -23,7 +23,7 @@ const countOnly = function(allItems, itemsToCount) {
   console.log(typeof(search));
 
   
- // console.log( "counter value is" ,counter, "times");
+ 
   
 }
 
