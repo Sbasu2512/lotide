@@ -21,8 +21,9 @@ const countOnly = function(allItems, itemsToCount) {
       counter++;
     }
   }
+  return `${item}: ${counter} `
   }
-  return `${item}: ${counter} `  ;
+    ;
 }
 
 const firstNames = [
@@ -37,4 +38,4 @@ const firstNames = [
   "Joe"
 ];
 
-console.log(firstNames, Fang);
+console.log(countOnly(firstNames, 'Fang'));
