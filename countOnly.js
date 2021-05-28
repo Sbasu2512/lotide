@@ -15,17 +15,18 @@ const assertEqual = function(actual, expected) {
 //Therefore it will need to return an object that can represent the stats.
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
-const countOnly = function(allItems, itemsToCount) {
+const countOnly = function(allItems, itemsToCount) { //arr,obj
   let counter = 0;
   let item, index, i ;
   index = 0; 
   let search = Object.keys(itemsToCount);
   let cond =  Object.values(itemsToCount);
-  console.log(search);
+  console.log(cond)
+  console.log(search)
   if(cond) {
 
-  } else {
-    
+  } else if(!cond){
+    console.log(cond)
   }
   
  
@@ -44,7 +45,7 @@ const firstNames = [
   "Joe"
 ];
 
-console.log(countOnly(firstNames, {"Jason": true}));
+console.log(countOnly(firstNames, {"Jason": true, "Karima": true, "Fang": true, "Agouhanna": false}));
 //const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
 //result1["Jason"];
 
