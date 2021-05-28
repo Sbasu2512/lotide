@@ -26,14 +26,23 @@ let temp = [] ;
 let index ;
 //For arrays with one or two elements, there is no middle. Return an empty array.
 if (arr.length <3){
-  return temp;
+  console.log(temp);
 }else if (arr.length % 2 === 0){
 //For arrays with an even number of elements, an array containing the two elements in the middle should be returned
-temp = arr.splice(Math.floor((arr.length-1)/2),(Math.floor((arr.length-1)/2))+1) ;
-return temp;
+index = Math.floor((arr.length-1)/2)
+temp = arr.splice(index,index+1) ;
+console.log(temp);
 } else {
 //For arrays with odd number of elements, an array containing a single middle element should be returned.
-temp = arr.splice(Math.floor((arr.length-1)/2),Math.floor((arr.length-1)/2)+1) ;
-return temp;
+index = Math.floor((arr.length-1)/2)
+temp = arr[index] ;
+console.log(temp);
 }
 };
+middle([1]) // => []
+middle([1, 2]) // => []
+middle([1, 2, 3]) // => [2]
+middle([1, 2, 3, 4, 5]) // => [3]
+middle([1, 2, 3, 4]) // => [2, 3]
+middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
+
