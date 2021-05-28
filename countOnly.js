@@ -15,18 +15,18 @@ const assertEqual = function(actual, expected) {
 //Therefore it will need to return an object that can represent the stats.
 const countOnly = function(allItems, itemsToCount) {
   let counter = 0;
-  let item ;
-  for(let i=0; i<itemsToCount.length; i++){
+  let item, index ;
+  index = 0; 
+  for(let i of itemsToCount){
+    index++;
+    console.log(i);
     for(item in allItems){
-      if(item === itemsToCount[i]){
+      if(item.includes(i)){
         counter++;
-
       }
     }
-    if(counter >0){
-      return `Item ${itemsToCount[i]} is found at index: ${i}`;
-    }else {
-      return `Item ${itemsToCount[i]} can not be found in the array provided`;
+    if(counter > 0){
+      return `Item ${i} is found at index: ${index}`;
     }
   }
     
@@ -44,4 +44,4 @@ const firstNames = [
   "Joe"
 ];
 
-console.log(countOnly(firstNames, 'Fang'));
+console.log(countOnly(firstNames, ['Fang','Joe']));
