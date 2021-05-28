@@ -20,7 +20,7 @@ const countOnly = function(allItems, itemsToCount) {
   let item, index, i ;
   index = 0; 
   let search = Object.keys(itemsToCount);
-  return (typeof(search));
+  return (search);
 
   
  
