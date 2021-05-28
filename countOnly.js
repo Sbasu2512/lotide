@@ -23,7 +23,11 @@ const countOnly = function(allItems, itemsToCount) {
 
       }
     }
-    return `Item ${itemsToCount[i]} `
+    if(counter >0){
+      return `Item ${itemsToCount[i]} is found at index: ${i}`;
+    }else {
+      return `Item ${itemsToCount[i]} can not be found in the array provided`;
+    }
   }
     
 }
