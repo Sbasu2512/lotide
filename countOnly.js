@@ -20,7 +20,7 @@ const countOnly = function(allItems, itemsToCount) {
   let item, index, i ;
   index = 0; 
   let search = Object.keys(itemsToCount);
-  console.log(typeof(search));
+  return (typeof(search));
 
   
  
@@ -39,9 +39,9 @@ const firstNames = [
   "Joe"
 ];
 
-//console.log(countOnly(firstNames, ['Fang','Joe']));
-const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
-result1["Jason"];
+console.log(countOnly(firstNames, {"Jason": true}));
+//const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
+//result1["Jason"];
 
 /*
 for( i of itemsToCount){
