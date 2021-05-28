@@ -30,7 +30,7 @@ if (arr.length <3){
 }else if (arr.length % 2 === 0){
 //For arrays with an even number of elements, an array containing the two elements in the middle should be returned
 index = arr.length/2;
-temp = arr.splice(index-1,2) ;
+temp = arr.splice(index-1,2) ;          //arr.splice(index,how many elements to remove)
 console.log(temp);
 } else {
 //For arrays with odd number of elements, an array containing a single middle element should be returned.
