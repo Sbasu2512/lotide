@@ -20,8 +20,13 @@ const countOnly = function(allItems, itemsToCount) {
   let item, index, i ;
   index = 0; 
   let search = Object.keys(itemsToCount);
-  return (search);
+  let cond =  Object.values(itemsToCount);
+  console.log(search);
+  if(cond) {
 
+  } else {
+    
+  }
   
  
   
