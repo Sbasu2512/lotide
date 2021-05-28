@@ -15,8 +15,16 @@ const assertEqual = function(actual, expected) {
 //Therefore it will need to return an object that can represent the stats.
 const countOnly = function(allItems, itemsToCount) {
   let counter = 0;
-  let item , index ;
-  
+  let item ;
+  for(let i=0; i<itemsToCount.length; i++){
+    for(item in allItems){
+      if(item === itemsToCount[i]){
+        counter++;
+
+      }
+    }
+    return `Item ${itemsToCount[i]} `
+  }
     
 }
 
