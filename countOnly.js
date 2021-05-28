@@ -15,22 +15,18 @@ const assertEqual = function(actual, expected) {
 //Therefore it will need to return an object that can represent the stats.
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
-const countOnly = function(allItems, itemsToCount) { //arr,obj
-  let counter = 0;
-  let item, index, i ;
-  index = 0; 
-  let search = Object.keys(itemsToCount);
-  let cond =  Object.values(itemsToCount);
-  console.log(cond)
-  console.log(search)
-  if(cond) {
+const countOnly = function (allItems, itemsToCount) {
+  const results = {};
 
-  } else if(!cond){
-    console.log(cond)
+  for (const item of allItems) {
+    if (results[item]) {
+      results[item] += 1;
+    } else {
+      results[item] = 1;
+    }
   }
-  
- 
-  
+
+  return results;
 }
 
 const firstNames = [
@@ -45,24 +41,9 @@ const firstNames = [
   "Joe"
 ];
 
-console.log(countOnly(firstNames, {"Jason": true, "Karima": true, "Fang": true, "Agouhanna": false}));
-//const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
-//result1["Jason"];
+const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
 
-/*
-for( i of itemsToCount){
-    index++;
-    //console.log(i , "index is: " ,index);
-    for(item in allItems){
-      //console.log( allItems[item]);
-      if(allItems[item].includes(i)){
-        counter++;
-      }
-    }
-    if(counter > 0){
-      console.log(counter);
-    }else {
-      console.log(undefined);
-    }
-  }
-*/
+assertEqual(result1["Jason"], 1);
+assertEqual(result1["Karima"], undefined);
+assertEqual(result1["Fang"], 2);
+assertEqual(result1["Agouhanna"], undefined);
