@@ -26,20 +26,22 @@ function eqArrays(a,b) {
 }
 //Implement without which will return a subset of a given array, removing unwanted element
 //This function should take in a source array and a itemsToRemove array. It should return a new array with only those elements from source that are not present in the itemsToRemove array.
-const without = (array1,array2) => {
-  var result = [] ;
-  for (var i = 0; i<array2.length; i++) {
-    var arrlen = array1.length;
-    for (var j = 0; j<arrlen; j++) {
-        if (array2[i] == array1[j]) {
-          //result.push(array1.slice(0, j).concat(array1.slice(j+1, arrlen)));
-          result = (array1.slice(0, j).concat(array1.slice(j+1, arrlen)))  ;
-            //console.log(result);
-        }
+const without = function(source,itemsToRemove){
+  let newArray = [];
+  for(let i = 0; i < source.length; i++){
+    let flag = 0;
+    for(let j = 0; j < itemsToRemove.length; j++){
+      if(source[i] === itemsToRemove[j]){
+         flag = 1;
+      }
     }
+    if(flag == 0){
+      newArray.push(source[i]);
+    }
+  }
+  return newArray;
 }
-return result;
-}
+
 
 console.log(without([1,2,5,3,4],[4,5,1]));
 /*
