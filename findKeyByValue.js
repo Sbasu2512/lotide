@@ -4,8 +4,14 @@ const bestTVShowsByGenre = {
   drama:  "The Wire"
 };
 
-const findKeyByValue = (obj,value) => {
-  
+const findKeyByValue = function (obj, val) {
+  let result;
+  for (let key in obj) {
+    if (obj[key] === val) {
+      result = key;
+    }
+  }
+  return result;
 }
 
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
