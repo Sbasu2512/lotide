@@ -45,9 +45,10 @@ const assertObjectsEqual = function(actual, expected) {
   let objMatch = eqObjects(actual, expected); // return a bool value
   if (objMatch) {
     // using inspect(obj) so that we get more detailed output - will print the actual obj instead of [object Object]
-    console.log(`✅ ✅ ✅ Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
+    
+    console.log(`Passed: ${inspect(actual)} === ${inspect(expected)}`);
   } else {
-    console.log(`🛑 🛑 🛑 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
+    console.log(`Failed: ${inspect(actual)} !== ${inspect(expected)}`);
   }
 };
 
