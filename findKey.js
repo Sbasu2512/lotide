@@ -13,9 +13,10 @@ const assertEqual = function(actual, expected) {
 const findKey = (obj,callback) => {
   let temp = [];
   for(let x in obj){
+    //console.log(x);
     if(callback(obj[x])){     //if(!callback(ob[x])) ==>  if(callback(ob[x]) === false )? 
       console.log(x);
-      return ;
+      //return ;
       }
     }
   }
