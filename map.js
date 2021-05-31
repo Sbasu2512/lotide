@@ -26,7 +26,7 @@ for (let item of array) {
 const results1 = map(words, word => word[0]);
 console.log(results1);
 */
-const words = ["ground", "control", "to", "major", "tom"];
+//const words = ["ground", "control", "to", "major", "tom"];
 const map = (array,callback) => {
 const results = [];
 for (let item of array) {
@@ -34,3 +34,4 @@ for (let item of array) {
 }
   return results;
 } ;
+module.exports = map ;
