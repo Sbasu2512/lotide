@@ -26,12 +26,18 @@ it("should return empty array when array length is less than 3",()=> {
   const output = [];
   assert.deepEqual(input,output);
 })
+//middle([1, 2, 3]) // => [2]
+it("should return [2] for [1,2,3]", () => {
+  const input = middle([1,2,3]);
+  const output = [2];
+  assert.deepEqual(input,output);
+})
 });
 
 /*
 
 
-middle([1, 2, 3]) // => [2]
+
 ]
 
 middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
