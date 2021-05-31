@@ -14,6 +14,7 @@ const flatten = require('./flatten');
 const letterPositions = require('./letterPositions');
 const map = require('./map');
 const min = require('./min');
+const sum = require('./sum');
 
 module.exports = {
   head:   head,
@@ -31,5 +32,6 @@ module.exports = {
  flatten: flatten,
  letterPositions: letterPositions,
  map: map,
- min: min
+ min: min,
+ sum: sum 
 };

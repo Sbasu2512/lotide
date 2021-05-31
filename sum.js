@@ -6,8 +6,8 @@ function sum(args) {
   }
   return sum;
 }
-console.log(sum(args));
-
+// console.log(sum(args));
+module.exports = sum;
 /* let num1 = parseInt(args[2]);
 let num2 = parseInt(args[3]);
 sum = num1 + num2; */
