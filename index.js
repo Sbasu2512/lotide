@@ -10,6 +10,7 @@ const eqArrays = require('./eArrays');
 const eqObjects = require('./eqObjects');
 const findKey = require('./findKey');
 const findKeyByValue = require('./findKeyByValue');
+const flatten = require('./flatten');
 
 module.exports = {
   head:   head,
@@ -23,5 +24,6 @@ module.exports = {
  eqArrays: eqArrays,
  eqObjects: eqObjects,
  findKey: findKey,
- findKeyByValue: findKeyByValue
+ findKeyByValue: findKeyByValue,
+ flatten: flatten
 };
