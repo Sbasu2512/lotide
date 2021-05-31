@@ -1,4 +1,5 @@
 const assertEqual = function(actual, expected) {
+  console.log("Running the test 🤞🏼🤞🏼🤞🏼🤞🏼")
   if (actual === expected) {
     console.log(
       `🤩🤩🤩🤩  Assertion passed: ${actual} === ${expected} 💯💯💯💯`
@@ -10,10 +11,6 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-assertEqual(1, 1);
-console.log();
-assertEqual(1, 5);
-console.log();
-assertEqual("Sayantan", "Basu");
-console.log();
-assertEqual("Basu", "Basu");
+module.exports = assertEqual;
+
+assertEqual("Say","Say");
