@@ -13,6 +13,7 @@ const findKeyByValue = require('./findKeyByValue');
 const flatten = require('./flatten');
 const letterPositions = require('./letterPositions');
 const map = require('./map');
+const min = require('./min');
 
 module.exports = {
   head:   head,
@@ -29,5 +30,6 @@ module.exports = {
  findKeyByValue: findKeyByValue,
  flatten: flatten,
  letterPositions: letterPositions,
- map: map
+ map: map,
+ min: min
 };
