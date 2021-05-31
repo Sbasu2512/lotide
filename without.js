@@ -42,8 +42,8 @@ const without = function(source,itemsToRemove){
   return newArray;
 }
 
-
-console.log(without([1,2,5,3,4],[4,5,1]));
+module.exports = without;
+//console.log(without([1,2,5,3,4],[4,5,1]));
 /*
 var without = baseRest(function(array, values) {
   return isArrayLikeObject(array)
