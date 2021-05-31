@@ -31,15 +31,13 @@ it("should return [2] for [1,2,3]", () => {
   const input = middle([1,2,3]);
   const output = [2];
   assert.deepEqual(input,output);
-})
+});
+//middle(['hello','bae','bye','how you doing','where you going','loser']);  //[ 'bye', 'how you doing' ]
+it("should return middle two values for odd length of an array", ()=>{
+  const input = middle(['hello','bae','bye','how you doing','where you going','loser']);
+  console.log(input);
+  const output = [ 'bye', 'how you doing' ];
+  assert.deepEqual(input, output);
+});
 });
 
-/*
-
-
-
-]
-
-middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
-middle(['hello','bae','bye','how you doing','where you going','loser']);  //[ 'bye', 'how you doing' ]
-*/
