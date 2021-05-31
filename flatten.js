@@ -12,3 +12,4 @@ const flatten = function(array) {
   });
 }
 
+module.exports = flatten;
