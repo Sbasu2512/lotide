@@ -12,5 +12,3 @@ const assertEqual = function(actual, expected) {
 };
 
 module.exports = assertEqual;
-
-assertEqual("Say","Say");
