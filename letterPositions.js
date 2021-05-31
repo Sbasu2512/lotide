@@ -17,7 +17,7 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-console.log(letterPositions("Hello"));
+//console.log(letterPositions("Hello"));
 
 /*
 
