@@ -33,7 +33,7 @@ The following functions are currently implemented:
 * `middle`: returns the middle element of an array.
 * `map`: it will return a new array based on the results of the callback function.
 * `min`: returns the lowest number in an array.
-*``:
+* `sum`: it take node arguments and returns thier sum.
 *``:
 *``:
 *``:
