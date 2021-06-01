@@ -39,8 +39,8 @@ The following functions are currently implemented:
 * `countOnly`: it takes in an array and an object & return an object containing counts of everything that the input object listed.
 * `eqArrays`: it takes in two arrays and returns true or false, based on a perfect match.
 * `eqObjects`: it takes in two objects and returns true or false, based on a perfect match.
+* `findKey`: it takes in an object and a callback func and returns the first key for which the callback returns a truthy value. If no key is found, then it returns undefined.
 * ``:
-*``:
 *``:
 *``:
 *``:
