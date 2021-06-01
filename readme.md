@@ -31,7 +31,7 @@ The following functions are currently implemented:
 * `head`: returns the element in 0th index of the given array.
 * `tail`: returns the rest of the array after removing the 0th index element.
 * `middle`: returns the middle element of an array.
-*``:
+*`map`: Our map function will take in two arguments 1.An array to map 2. A callback function. The map function will return a new array based on the results of the callback function.
 *``:
 *``:
 *``:
