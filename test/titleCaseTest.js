@@ -30,10 +30,15 @@ it("", () => {
 it("", () => {
   const input = titleCase("WHAT HAPPENS HERE");
   assert.equal(input,"What Happens Here");
+});
+// titleCase("") //should return ""
+it("", () => {
+  const input = titleCase("");
+  assert.equal(input, "");
 })
 });
 
 
 
-// titleCase("") //should return ""
+
 // titleCase("A") //should return "A"
