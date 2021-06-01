@@ -1,0 +1,31 @@
+{
+  "name": "@sayantan212/lotide",
+  "version": "1.0.0",
+  "description": "This is my own version of Lodash - a project undertaken as a student of Lighthouse Lab's Web development Program.",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sbasu2512/lotide.git"
+  },
+  "keywords": [
+    "lodash",
+    "lotide",
+    "library"
+  ],
+  "author": "sayantan basu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sbasu2512/lotide/issues"
+  },
+  "homepage": "https://github.com/Sbasu2512/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.4.0"
+  }
+}
