@@ -35,10 +35,13 @@ it("", () => {
 it("", () => {
   const input = titleCase("");
   assert.equal(input, "");
+});
+// titleCase("A") //should return "A"
+it("", ()=>{
+  assert.equal(titleCase("A"),"A");
 })
 });
 
 
 
 
-// titleCase("A") //should return "A"
