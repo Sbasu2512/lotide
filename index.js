@@ -17,6 +17,7 @@ const min = require('./min');
 const sum = require('./sum');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
+const titleCase = require('./titleCase');
 
 module.exports = {
   head,
@@ -25,8 +26,8 @@ module.exports = {
   map,
  min,
  sum,
-  assertArraysEquals,
- assertEqual ,
+  assertArraysEquals, 
+ assertEqual ,        
  assertObjectsEqual ,
  countLetters ,
  countOnly ,
@@ -37,5 +38,6 @@ module.exports = {
  flatten ,
  letterPositions ,
  takeUntil , 
- without 
+ without,
+ titleCase 
 };
