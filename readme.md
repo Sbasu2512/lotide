@@ -40,8 +40,8 @@ The following functions are currently implemented:
 * `eqArrays`: it takes in two arrays and returns true or false, based on a perfect match.
 * `eqObjects`: it takes in two objects and returns true or false, based on a perfect match.
 * `findKey`: it takes in an object and a callback func and returns the first key for which the callback returns a truthy value. If no key is found, then it returns undefined.
+* `findKeyByValue`: it takes in an object and a value and returns the key for that value.
 * ``:
-*``:
 *``:
 *``:
 *``:
