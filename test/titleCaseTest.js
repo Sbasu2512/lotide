@@ -39,7 +39,7 @@ it("", () => {
 // titleCase("A") //should return "A"
 it("", ()=>{
   assert.equal(titleCase("A"),"A");
-})
+});
 });
 
 
