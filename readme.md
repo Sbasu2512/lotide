@@ -43,7 +43,7 @@ The following functions are currently implemented:
 * `findKeyByValue`: it takes in an object and a value and returns the key for that value.
 * `flatten`: it takes in an array containing elements including nested arrays of elements, and returns a "flattened" version of the array.
 * `letterPositions`: returns all the indices (zero-based positions) in the string where each character is found.
-* ``:
+* `takeUntil`: returns a "slice of the array with elements taken from the beginning."
 *``:
 *``:
 *``:
