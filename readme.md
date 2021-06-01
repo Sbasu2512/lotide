@@ -27,5 +27,7 @@ This project was created and published by me as part of my learnings at Lighthou
 The following functions are currently implemented:
 
 * `assertArraysEqual`: it takes in two arrays and prints an appropriate message to the console.
-* `function2(...)`: description
-* `function3(...)`: description
+* `assertEqual`: checks if both input and output have a perfect match.
+* `head`: returns the element in 0th index of the given array.
+* `tail`: returns the rest of the array after removing the 0th index element.
+* ``
