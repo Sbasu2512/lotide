@@ -31,3 +31,24 @@ The following functions are currently implemented:
 * `head`: returns the element in 0th index of the given array.
 * `tail`: returns the rest of the array after removing the 0th index element.
 * `middle`: returns the middle element of an array.
+*``:
+*``:
+*``:
+*``:
+*``:
+*``:
+*``:
+*``:
+*``:
+*``:
+*``:
+*``:
+*``:
+*``:
+*``:
+*``:
+*``:
+*``:
+*``:
+*``:
+*``:
