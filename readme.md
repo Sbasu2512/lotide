@@ -35,9 +35,9 @@ The following functions are currently implemented:
 * `min`: returns the lowest number in an array.
 * `sum`: it take node arguments and returns thier sum.
 * `assertObjectsEqual`: detects that two objects are equal.
-*``:
-*``:
-*``:
+* `countLetters`: returns a count of each of the letters in that sentence.
+* `countOnly`: it takes in an array and an object & return an object containing counts of everything that the input object listed.
+* ``:
 *``:
 *``:
 *``:
