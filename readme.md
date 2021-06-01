@@ -37,9 +37,9 @@ The following functions are currently implemented:
 * `assertObjectsEqual`: detects that two objects are equal.
 * `countLetters`: returns a count of each of the letters in that sentence.
 * `countOnly`: it takes in an array and an object & return an object containing counts of everything that the input object listed.
-* `eqArrays`: which takes in two arrays and returns true or false, based on a perfect match.
-*``:
-*``:
+* `eqArrays`: it takes in two arrays and returns true or false, based on a perfect match.
+* `eqObjects`: it takes in two objects and returns true or false, based on a perfect match.
+* ``:
 *``:
 *``:
 *``:
