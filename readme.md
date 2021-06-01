@@ -41,9 +41,9 @@ The following functions are currently implemented:
 * `eqObjects`: it takes in two objects and returns true or false, based on a perfect match.
 * `findKey`: it takes in an object and a callback func and returns the first key for which the callback returns a truthy value. If no key is found, then it returns undefined.
 * `findKeyByValue`: it takes in an object and a value and returns the key for that value.
+* `flatten`: it takes in an array containing elements including nested arrays of elements, and returns a "flattened" version of the array.
+* `letterPositions`: returns all the indices (zero-based positions) in the string where each character is found.
 * ``:
-*``:
-*``:
 *``:
 *``:
 *``:
